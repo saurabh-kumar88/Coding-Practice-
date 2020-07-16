@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>controller</title>
+</head>
+<body>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    <input type="text" ng-model="firstName">
+    <input type="text" ng-model="lastName">
+    <br>
+    Full Name: {{fullName()}}
+
+    
+
+  </div>
+
+  <div ng-app="City" ng-controller="myCtrl2">
+      <ul>
+        <li ng-repeat="x in names">
+          {{x.country + "," + x.capital}}
+        </li>
+      </ul>
+  </div>
+
+  <script src="mian.js">
+  
+    // var app = angular.module("myApp", []);
+    // app.controller("myCtrl", ($scope)=>{
+    //   $scope.firstName = "John";
+    //   $scope.lastName = "Doe";
+    //   // A controller can also have methods (variables as functions)
+    //   $scope.fullName = function (){ 
+    //     return $scope.firstName + " " + $scope.lastName;
+    //   }
+    // });
+  </script>
+</body>
+</html>

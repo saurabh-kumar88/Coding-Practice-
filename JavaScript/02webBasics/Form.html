@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Registration</title>
+</head>
+<body>
+    <br>
+    <form class ="myForm" onclick="advance_form_validation()" action="">
+        <input type="text" id="fName" name="firstName" maxlength="20" placeholder="First name" style="text-align: center" required><br><br>
+        <input type="text" id="lName" name="lastName" maxlength="20" placeholder="Last name" style="text-align: center" required><br><br>
+        <input type="email" id="email" name="email" maxlength="30" placeholder="Email" style="text-align: center" required><br><br>
+        <input type="password"  id="passw" name="passw" placeholder="password" style="text-align: center"required> <br><br>
+        <input type="password"  id="re-passw" name="passw" placeholder="Re-type password" style="text-align: center"required> <br><br>
+        <button type="submit" id="myButton" >Submit</button>
+    </form>
+    
+        
+    <script src="formValidation.js"></script>
+    
+</body>
+</html>

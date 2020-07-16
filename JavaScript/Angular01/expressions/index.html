@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular-expressions</title>
+  
+</head>
+<body>
+  <!-- <div ng-app="">
+      <p>My expression : {{5+5}}</p>
+  </div> -->
+
+  <!-- change color -->
+
+  <!-- <div ng-app="" ng-init="myCol='lightgreen'">
+    <input style="background-color:{{myCol}}" ng-model="myCol">
+  </div> -->
+
+  <!-- AngularJS Numbers -->
+  
+  <!-- <div ng-app="" ng-init="radius='1';height=1">
+    <p>Volume of cylinder : {{3.14 * radius* radius * height}}</p>
+    <h3>Volume of Cylinder : <span ng-bind="3.14 * radius* radius * height"></span></h3>
+  </div>
+   -->
+
+   <!-- AngularJS Strings -->
+   <!-- <div ng-app="" ng-init="fname = 'Jhon'; lname='Doe'">
+     <p>Full name : {{fname +" "+lname}}</p>
+     <h2>Full name : <span ng-bind="fname + ' '+lname"></span></h2>     
+   </div> -->
+
+   <!-- AngularJs Objects -->
+  <!-- <div ng-app="" ng-init="person={firstName:'John', lastName:'Doe'}">
+     <p>First name : {{person.firstName}}</p>
+    <h3>last name : <span ng-bind="person.lastName"></span></h3>
+  </div> -->
+
+  <!-- AngularJS Arrays -->
+  <div ng-app="" ng-init="points=[12,34,54]">
+    <p>AngularJs Array : {{points[1]}}</p>
+    <p>AngularJs Array : {{points.length}}</p>
+    <h3>AngularJs Array : <span ng-bind="points[2]"></span></h3>
+  </div>
+
+
+
+  
+</body>
+</html>

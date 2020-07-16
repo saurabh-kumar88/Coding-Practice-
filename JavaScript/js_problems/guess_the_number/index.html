@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess Number</title>
+</head>
+<body>
+  <div id="container">
+      <h2>click this button to start</h2>
+  <form id="guessNumber_form" action="">
+    <ul><input id="users_guess" type="text" name="users_guess" placeholder="Enter number" ></ul>
+    <ul><button onclick="guessNumber()" id="start" type="submit">guess</button></ul>
+    
+  </form>
+  <ul><input onclick="resetForm()" id="clear" type="button" value="Reset form" ></ul>
+  
+  <p id="result"></p>
+  </div>
+
+<script src="main.js"></script>  
+</body>
+</html>

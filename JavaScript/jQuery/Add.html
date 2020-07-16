@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery Add methods</title>
+</head>
+<body>
+  <h3>.append() and .prepend()</h3>
+
+  <p id="text1">Foo bar</p>
+  <button id="btn1">Append "bar"</button> <button id="btn2">Prepend "foo"</button> <br>
+  
+  
+  <br>
+  <br>
+  <b style="margin-top:100px;">we can append or prepend multiple items</b>
+  <br> <button id="btn3" style="margin-top:10px;">Append new items to list</button> 
+  <button id="btn4">Append multiple items</button>
+  <div>
+      <ol id="list1">
+          <li>list item 1</li>
+          <li>list item 2</li>
+          <li>list item 3</li>
+        </ol>  
+  </div>
+  <br>
+  <b>.before() and .after()</b>
+  <div style="margin-top:50px;">
+  
+    <img src="https://www.w3schools.com/images/w3jquery.gif" alt="" id="img1">
+
+  </div>
+  <button id="btn5">insert before</button> <button id= "btn6">insert after</button>
+  
+
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+      $("#text1").append("<b> bar </b>");
+    });
+
+    $("#btn2").click(function(){
+      $("#text1").prepend("<b> foo </b>");
+    });
+
+    // append list items
+
+    $("#btn3").click(function(){
+      $("#list1").append("<li>A new item added</li>");
+    });
+
+    // add multiple items
+    $("#btn4").click(function(){
+      for(var i=0; i<3; i++)
+      {
+        $("#list1").append("<li>More items added</li>");
+      }
+      
+    });
+
+    //.before() and .after() methods
+
+    $("#btn5").click(function(){
+      $("#img1").before("<b> insert before </b>");
+    });
+
+    $("#btn6").click(function(){
+      $("#img1").after("<b> insert after </b>");
+    });
+
+
+
+  });
+
+</script>
+
+</body>
+</html>

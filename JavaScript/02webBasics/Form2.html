@@ -1,0 +1,56 @@
+<div class="wrapper">
+    <header class="page_title">
+        <h1>Create New Job</h1>
+    </header>
+    <section class="form">
+        <form id="form" name="form" method="post" action="#">
+            <label>Job ID:</label>
+            <input type="text" name="job_id" id="job_id" placeholder="1">
+            <div id="validation"></div>
+            <label>Start Date:</label>
+            <input type="text" name="start_date" id="start_date" placeholder="mm/dd/yy">
+            <div id="validation"></div>
+            <label>Deadline:</label>
+            <input type="text" name="deadline" id="deadline" placeholder="mm/dd/yy">
+            <div id="validation"></div>
+            <label>Finish Date:</label>
+            <input type="text" name="finish_date" id="finish_date" placeholder="mm/dd/yy">
+            <div id="validation"></div>
+            <label>Budget($):</label>
+            <input type="text" name="budget" id="budget" placeholder="100">
+            <div id="validation"></div>
+            <label>Client ID:</label>
+            <input type="text" name="client_id" id="client_id" placeholder="1">
+            <div id="validation"></div>
+            <label>Client Phone Number:</label>
+            <input type="text" name="phone" id="phone" placeholder="01712333333">
+            <div id="validation"></div>
+            <label>Client Email address:</label>
+            <input type="text" name="email" id="email" placeholder="john.smith@gmail.com">
+            <div id="validation"></div>
+            <label>Bidder ID:</label>
+            <input type="text" name="bidder_id" id="bidder_id" placeholder="1">
+            <div id="validation"></div>
+            <label>Number of Supervisor:</label>
+            <select title="Supervisor" id="num_supervisor">
+                    <option value="-1">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+            </select>
+            <div id="validation"></div>
+            <label>Odesk Profile Link:</label>
+            <input type="text" name="odesk_link" id="odesk_link" placeholder="https://www.odesk.com/jobs/Frontend-engineer">
+            <div id="validation"></div>
+            <label>Owner Type:</label>
+            <input type="radio" name="owner_type" id="owner_type" value="member" /><label class="text_label">Member</label>
+            <input type="radio" name="owner_type" id="owner_type" value="employee" /><label class="text_label">Employee</label>
+            <div id="validation"></div>
+            <div class="clear"></div>
+            <label>Message:</label> 
+            <textarea id="message" name="message" rows="2" cols="20" placeholder="Your enquiry goes here"></textarea>
+            <div id="validation"></div>
+            <input type="submit" name="submit" id="submit" value="Submit" />
+    </form>
+ </section>
+</div>

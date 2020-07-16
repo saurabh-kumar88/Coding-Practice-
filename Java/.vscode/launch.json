@@ -1,0 +1,193 @@
+{
+  "configurations": [
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - EnumClass",
+//       "request": "launch",
+//       "mainClass": "advance2.EnumClass",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - EnumClass",
+//       "request": "launch",
+//       "mainClass": "advance02.EnumClass",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Multiple_Interface",
+//       "request": "launch",
+//       "mainClass": "advance.abstraction.Multiple_Interface",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Interface",
+//       "request": "launch",
+//       "mainClass": "advance.abstraction.Interface",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - MyAbstract",
+//       "request": "launch",
+//       "mainClass": "advance.abstraction.MyAbstract",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - InnerClass",
+//       "request": "launch",
+//       "mainClass": "advance.InnerClass",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Test",
+//       "request": "launch",
+//       "mainClass": "advance.inheritance.Test",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Tesla",
+//       "request": "launch",
+//       "mainClass": "advance.inheritance.Tesla",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Audi",
+//       "request": "launch",
+//       "mainClass": "advance.inheritance.Audi",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - BWM",
+//       "request": "launch",
+//       "mainClass": "advance.inheritance.BWM",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - UserInput",
+//       "request": "launch",
+//       "mainClass": "advance.UserInput",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Myclass",
+//       "request": "launch",
+//       "mainClass": "advance.abstraction.Myclass",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - JAVA_CONSTRUCTORS",
+//       "request": "launch",
+//       "mainClass": "advance.JAVA_CONSTRUCTORS",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - BMW",
+//       "request": "launch",
+//       "mainClass": "cars.BMW",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Car",
+//       "request": "launch",
+//       "mainClass": "advance.Car",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Users",
+//       "request": "launch",
+//       "mainClass": "advance.Users",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Objects",
+//       "request": "launch",
+//       "mainClass": "advance.Objects",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Array_Lists",
+//       "request": "launch",
+//       "mainClass": "basics.Array_Lists",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Arrays_methods",
+//       "request": "launch",
+//       "mainClass": "basics.Arrays_methods",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - FunctionsOrMethods",
+//       "request": "launch",
+//       "mainClass": "java_methods.FunctionsOrMethods",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Arrays",
+//       "request": "launch",
+//       "mainClass": "basics.Arrays",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - _SwitchCase",
+//       "request": "launch",
+//       "mainClass": "basics._SwitchCase",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Math_module",
+//       "request": "launch",
+//       "mainClass": "basics.Math_module",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - StringMethods",
+//       "request": "launch",
+//       "mainClass": "basics.StringMethods",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - String_methods",
+//       "request": "launch",
+//       "mainClass": "basics.String_methods",
+//       "projectName": "Java_2534a0be"
+//     },
+//     {
+//       "type": "java",
+//       "name": "CodeLens (Launch) - Variables",
+//       "request": "launch",
+//       "mainClass": "basics.Variables",
+//       "projectName": "Java_2534a0be"
+//     },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Hello_world",
+      "request": "launch",
+      "mainClass": "basics.Hello_world",
+      "projectName": "Java_2534a0be"
+    }
+  ]
+}

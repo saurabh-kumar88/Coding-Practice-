@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+<div id="container">
+    <div class="controls">
+        <h1 style="text-align:center">My Awesome Todo</h1>
+        
+        <!------------------------->
+        <form class="myForm" action="">
+            <input type="text" id="input" name="newTodo" placeholder="Enter here"><br><br>
+            <button onclick="addItems()" type="submit" id="add">Add</button>  
+        </form><br>
+        
+        <button type="submit" id="remove">Remove</button>
+        <button type="submit" id="select_all">Select All</button>
+        <button type="submit" id="unCheck_all">Uncheck All</button>
+                
+        <ul id="list">
+            <li class="mycheck"><input type="checkbox" id="check" checked>
+            <label for="">Record youtube video</label>
+            </li>
+             
+        </ul>
+        
+    </div>
+</div>
+
+
+
+    
+<script src="todo.js"></script>    
+</body>
+</html>

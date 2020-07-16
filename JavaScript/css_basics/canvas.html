@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas-basics</title>
+</head>
+<body>
+  <canvas id="myCanvas">
+
+  </canvas>
+
+  <style>
+    canvas#myCanvas{
+      
+      width:400px;
+      height:200px;
+      background-color: whitesmoke;
+      border: 5px blue solid;
+
+    }
+
+  </style>
+
+  <script>
+    // window.alert("connected!")
+    var c = document.querySelector('#myCanvas');
+    var ctx = c.getContext('2d');
+    var x;
+    var y;
+
+    ctx.moveTo(0,0);
+
+    for (let point = 0; point < 1000; point++) {
+      ctx.lineTo(point, point);
+      ctx.stroke();
+    }
+    
+    console.log("foo");
+    
+    console.log("bar");
+
+    
+    function sleepFor( sleepDuration ){
+    var now = new Date().getTime();
+    while(new Date().getTime() < now + sleepDuration){ /* do nothing */ } 
+}
+
+    
+  </script>
+
+</body>
+</html>

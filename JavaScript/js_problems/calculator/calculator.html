@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+  
+  <input id="first_number" type="number" step="0.001" name="firstNumber" placeholder="firstNumber" style="align-self: center" required>
+  <input id="second_number" type="number" step="0.001" name="secondNumber" placeholder="secondNumber" style="align-self: center" required>
+  <br><button type="button" data-action="Calculator.multiply" id="multiply" type="submit" >Mul (X)</button>
+  <button type="button" data-action="Calculator.divide"  id="divide" type="submit" >Divide (/)</button>
+  <button type="button" data-action="Calculator.add" id="add" type="submit" >Add (+)</button>
+  <button type="button" data-action="Calculator.sub" id="sub" type="submit" >Sub (-)</button>
+  <button type="button" data-action="Calculator.reset" id="reset" type="submit">AC</button>
+
+  <div id="result">display result here!</div>
+</div>
+
+<script src="calculator.js" ></script> 
+
+
+</body>
+</html>

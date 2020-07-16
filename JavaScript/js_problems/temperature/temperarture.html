@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="temperature_style.css">
+  <title>Temperature Unit</title>
+</head>
+<body>
+  
+<div id="container" >
+  <h1>Converts temperature Celsius to Fahrenheit and vice-versa</h1>
+  <p>Select unit of conversion</p>
+  <form id="temperature_form">
+    <input id="temp_value" type="number" step="0.1" placeholder="Enter temperature" required>
+    <select name="temp_unit" id="temp_unit">
+      <option value="Celsius">Celsius</option>
+      <option value="Fahrenheit">Fahrenheit</option>
+    </select>
+    <button type="button" onclick="myFunction()" >submit</button>
+  </form>
+  <div id="result"></div>
+</div>
+
+
+
+<script src="temperature.js" ></script> 
+</body>
+</html>

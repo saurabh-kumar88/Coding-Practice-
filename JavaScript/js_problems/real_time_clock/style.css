@@ -1,0 +1,25 @@
+body{
+  background-color: #ffff;
+}
+
+#clock{
+  widows: 350px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  background: whitesmoke;
+  height: 800px;
+  overflow-y: auto;
+  color: black;
+  
+}
+
+#clock p{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-weight: 500;
+  color: blue;
+}
+

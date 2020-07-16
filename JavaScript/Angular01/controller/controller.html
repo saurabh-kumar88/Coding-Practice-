@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Model</title>
+</head>
+<body>
+  <!-- two way binding -->
+  <div ng-app="myapp" ng-controller="myCtrl">
+      Name : <input ng-model="name" type="text" placeholder="enter here">
+    <p>You have entered : {{name}}</p> 
+    </div>
+
+  <script>
+    var app = angular.module("myapp", []);
+    app.controller("myCtrl", function($scope){
+      $scope.name = "foo bar";
+    })
+    </script>
+
+    <!-- validate user input -->
+
+    <form ng-app="" name="myForm">
+      <input type="email" name="myEmailID" ng-model="text" style="padding: 0.5%">
+      <span ng-show="myForm.myEmailID.$error.email"></span>
+    </form>
+
+    <style>
+      /* change color for invalid input */
+      input.ng-invalid{ 
+      background-color: red;  
+      }
+    </style>
+  
+</body>
+</html>

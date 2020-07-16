@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular-Directives</title>
+</head>
+<body>
+    
+  <!-- <div ng-app="">
+    <input type="text" placeholder="Full name" ng-model="fullName">
+    <h2>Name in upperCase : {{fullName.toUpperCase()}}</h2>
+<br>
+<h3>basic temperature convertor app</h3>
+    <h4>celsius to Fahrenheit : <input type="text" placeholder="Temp in celsius" ng-model="celsius"></h4> 
+    <p>{{(9*celsius)/5 + 32}} Fahrenheight</p>
+    <h4>Fahrenheit to celsius : <input type="text" placeholder="Temp in Fahrenheit" ng-model="fahrenheit"></h4>
+    <p>{{5 * (fahrenheit - 32)/9}} celsius</p>
+  </div> -->
+
+  <!-- ng-repeat -->
+  <!-- Repeating HTML Elements -->
+
+  <!-- <div ng-app="" ng-init="cities=['delhi', 'mumbai', 'bangalore']">
+    <ul>
+      <li ng-repeat="x in cities">
+        {{x}}
+      </li>
+    </ul>
+  </div> -->
+
+  <!-- <div ng-app="" ng-init="National_Capitals=[{country:'india', capital:'New Delhi'},
+                                            {country:'USA', capital:'Washing DC'},
+                                            {country:'Canada', capital:'Otwa'},
+                                            {country:'England',capital:'london'}]">
+      
+      <ul>
+        <li ng-repeat="x in National_Capitals">
+          {{x.country +" -- "+ x.capital}}
+        </li>
+      </ul>
+    </div> -->
+
+  <!-- create custom directives -->
+  <div ng-app="myApp">
+      
+      <!-- <my-custom-directive></my-custom-directive> -->
+      <!-- <div my-custom-directive></div> -->
+      <!-- <div class="my-custom-directive"></div> -->
+      
+      <!-- invoking from comment -->
+      <!-- directive: my-custom-directive --> 
+      <script>
+          var app = angular.module('myApp', []);
+          app.directive('myCustomDirective', ()=>{
+           return {
+            restrict: 'C', //You must add the value "C" to the restrict property to be able to invoke the directive from a class name 
+            
+            replace: true, //added the replace property in this example, otherwise the comment would be invisible.
+            restrict: 'M', // add the value "M" to the restrict property to be able to invoke the directive from a comment.
+            
+            template: "<h1>Made by my custom directive 'my-custom-directive'</h1>"
+           };
+          });
+        </script> 
+    </div>
+  
+
+   
+
+
+
+
+
+
+
+</body>
+</html>

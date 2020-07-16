@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Chart</title>
+</head>
+<body>
+
+  
+  <p class="b1">A dotted border.</p>
+  <p class="b2">A dotted border.</p>
+  <p class="b3">A dotted border.</p>
+  <p class="b4">Individual sides with different style</p>
+  <br>
+  <h3 class="b5" >All styles in single line of code don't work correctly</h3>
+  <h4 class="b6" >Round corners</h4>
+  <style>
+  p,h3,h4
+  {
+    text-align: center;
+  }  
+  p.b1
+  {
+    border-style:solid double;
+    border-width: thick;
+    }
+
+  p.b2
+  {
+   border-style:solid;
+   border-width: 5px 8px; /*5px top and bottom and 8px right and left*/
+
+  
+  }
+
+  p.b3
+  {
+    border-style:groove;
+    border-width:5px;
+    /* border-color: blueviolet; */
+    
+  }
+
+  p.b4
+  {
+    border-top-style:dashed;
+    border-bottom-style:dotted;
+    border-left-style:solid;
+    border-left-style:solid;
+  }
+
+
+
+  
+  h3.b5
+  {
+    border-style: solid;
+    border-width: 10px 5px;
+    border-color: #33cc00;
+    
+  }
+
+  h4.b6
+  {
+    border-style:solid;
+    border-width:5px 3px;
+    border-radius:10px;
+    border-color: #ad33ff;
+  }
+
+
+
+
+  </style>
+
+
+
+</body>
+</html>

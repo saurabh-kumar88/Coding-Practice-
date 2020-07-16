@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>DOM manipulation</title>
+<script>
+  // .text() and .html() methods
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+      // var text = $("#p1").html();
+      $("#p1").text("foo bar"); // pass string as argument to set element
+    });
+  });
+  
+</script>
+
+<script>
+  // .val() method()
+  $(document).ready(function(){
+    $("#btn2").click(function(){
+      var value = $("#ip1").val();
+      if(value.length > 0)
+      {
+        alert(value);
+      }
+      
+    });
+  });
+
+</script>
+
+<script>
+ // .attr() method()
+ $(document).ready(function() {
+   $("#btn3").click(function() {
+    var link = $("#w3c").attr("href");
+    alert(link);
+
+    // var divStyle = $("#div2").attr("style");
+    // console.log(divStyle);
+   });
+ });
+</script>
+
+
+</head>
+<body>
+  <b>both .html() and .text() are used to get and set strings of element</b>
+  <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa magni laborum maiores, doloribus cum voluptate vero quae suscipit consectetur at asperiores totam blanditiis officia quo harum rerum nostrum? Consequatur, facilis!</p>
+  <button id="btn1">click</button>
+
+  
+ <div class="div1" style="margin:40px 40px 10px 10px">
+    <br> <b>.val() method is used to get user inputs or value attribute of any DOM element</b> <br>
+    <input id="ip1" type="text"> <button id="btn2">click</button>
+ </div>
+
+ <div class="div2" style="margin:40px 40px 10px 10px">
+   <b>.attr() method is used to get attribute value of DOM element</b>
+   <a name="myLink" href="https://www.w3schools.com/jquery/jquery_dom_get.asp"  id="w3c" target="_blank" rel="noopener noreferrer"><p>this is a w3schools link : </p></a>
+  <button id="btn3">click</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Without callback</title>
+  <script>
+    // hide animation without callback
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $("#p1").hide(3000);
+        alert("button clicked");
+      });
+    });
+  </script>
+
+<script>
+    // hide animation with callback function
+    $(document).ready(function(){
+      $("#btn2").click(function(){
+        $("#p2").hide(3000, function(){
+          alert("button clicked");
+        });
+      });
+    });
+  </script>
+
+</head>
+<body>
+  
+  <p id="p1">without callback</p>
+  <p id="p2">with callback</p>
+  
+  <button id="btn1">wihtout callback</button>
+  <button id="btn2" style="margin:10px 10px">with callback</button>
+</body>
+</html>

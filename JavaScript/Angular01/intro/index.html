@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" ></script>  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular01</title>
+</head>
+<body>
+
+<!-- Angular js directives -->
+
+<!-- <div ng-app="">
+ 
+  <p>Input something in the input box:</p>
+  <p>Name: <input type="text" ng-model="name"></p>
+  <p ng-bind="name"></p>
+  <b ng-bind="name"></b>
+  <h3 ng-bind="name"></h3>
+  <h2 ng-bind="name"></h2>
+  <h1 ng-bind="name"></h1>
+<br>
+  <p>Full name: <input type="text" ng-model="fullName"></p>
+  <p ng-bind="fullName"></p>
+  <h1 ng-bind="fullName"></h1>
+
+</div> -->
+
+<!-- The ng-init directive -->
+
+<!-- <div ng-app="" data-ng-init="firstName=' Jhon'" >
+  <p>First name is :<span ng-bind="firstName"></span></p>
+</div> -->
+
+
+<!-- AngularJs Expressions -->
+<!-- <div ng-app="">
+  <p>My first angular expression {{ 8/0 }}</p>
+  <p><input type="text" ng-model="name" placeholder="Enter name"></p>
+  <p>{{name}}</p>
+  <b>{{name}}</b>
+  <h3>{{name}}</h3>
+  <h2>{{name}}</h2>
+  <h1>{{name}}</h1>
+</div> -->
+
+<!-- AngularJS Applications modules -->
+<div ng-app="myApp" ng-controller="myCtrl">
+  <p>First name <input type="text" ng-model="firstName" placeholder="first name"></p>
+  <p>Last name <input type="text" ng-model="lastName" placeholder="last name"></p>
+<br>
+<p>{{ firstName  + lastName }}</p> 
+</div>
+
+<script>
+  var App = angular.module('myApp',[]);
+  App.controller('myCtrl', ($scope)=>{
+    $scope.firstName = "First name";
+    $scope.lastName = "last name";
+  });
+</script>
+
+
+</body>
+</html>

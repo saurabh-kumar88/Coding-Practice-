@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery .css()</title>
+<style>
+  .demoText
+  {
+    background-color: #ffcc00;
+    margin:10px 10px 15px 15px;
+    padding: 10px 10px 15px 15px;   
+    font-size:25px;
+    font-style: italic;
+  }
+
+  .demoText2
+  {
+    background-color: #adad85;
+    margin:10px 10px 15px 15px;
+    padding: 20px 20px 20px 20px;   
+    font-size:35px;
+    font-style: Arial;
+  }
+
+</style>
+</head>
+<body>
+
+
+  <div>
+    <!-- Manipulate css attributes -->
+    <h1 style="margin-top:20px">Manipulate css attributes</h1>
+    <p style="background-color: #49d049;" id="text1">Change background-color</p>
+    <button id="btn1">Change color</button>
+
+    <p id="text2" style="font-size: 20px;">Change font size</p> 
+    <button id="btn2">large size</button> <button id="btn3">small size</button> 
+    
+  </div>
+
+  <div class="demoText">
+      <h3 id="text3">Manipulate multiple css properties</h3>
+  </div>
+  <button id="btn4">Change multiple css by one click</button>
+
+
+  <div class="demoText" style="margin-top:30px">
+    <h3 id="text4">add Class and change all css properties</h3>
+  </div>
+  <button id="btn5">add demoText class</button>
+
+
+  <script>
+    $(document).ready(function(){
+      // change background color
+      $("#btn1").click(function(){
+        $("#text1").css("background-color", "#ff704d");
+      });
+
+      // change font size
+      $("#btn2").click(function(){
+        $("#text2").css("font-size", "50px");
+      });
+
+      $("#btn3").click(function(){
+        $("#text2").css("font-size", "8px");
+      });
+
+      //change multiple css properties
+
+      $("#btn4").click(function(){
+        $("#text3").css({"background-color":"#33cc33","font-size":"15px", "font-style":"Arial"});
+      });
+
+      //.addClass() method
+
+      $("#btn5").click(function(){
+        // $("#text4").addClass("demoText");
+        $("#text4").toggleClass("demoText2");
+      });
+
+      
+
+    });
+  </script>
+
+
+</body>
+</html>

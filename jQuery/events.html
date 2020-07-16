@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Events handling</title>
+</head>
+<body>
+  
+  <div class="demo">
+    <p>foo bar - single click to hide</p>
+  </div>
+
+  <button id="btn">click</button>
+
+  <div class="demo2">
+      <p>foo bar - double click to hide</p>
+    </div>
+  
+  <button id="btn2">double click</button>
+
+
+  <h2 id="mouse1">hover mouse over here</h2>
+
+  <div class="demo3">
+      <h4>on() method</h4>
+      <p>click me and make disappear what the rest</p>
+      <p>Click me too</p>
+      <p>Click me to disappear</p>
+
+  </div>
+  
+
+
+
+
+<script>
+  // single click
+  $(document).ready(function(){
+    $("#btn").click(function(){
+      $(".demo").hide();
+
+    });
+  });
+
+  // double click 
+  $(document).ready(function(){
+    $("#btn2").dblclick(function(){
+      $(".demo2").hide();
+    });
+  });
+
+  // hover mouse
+  $(document).ready(function(){
+    $("#mouse1").mouseenter(function(){
+      // alert("You hovered over h1");
+    });
+  });
+
+  // on()
+  $(document).ready(function(){
+    $("p").on("click", function(){
+      $(this).hide();
+    }); 
+  });
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  // demo of callback function with Set() method
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text(function(i, origText){
+      return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
+    });
+  });
+
+  $("#btn2").click(function(){
+    $("#test2").html(function(i, origText){
+      return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")"; 
+    });
+  });
+
+  $("#btn3").click(function(){
+    $("#test3").text(function(i, origText){
+      var newText = "Hello world!";
+      return newText;
+    });
+  });
+
+  // set a attribute
+
+  
+
+
+
+});
+</script>
+</head>
+<body>
+  
+  <!-- callback function with Set() method -->
+
+<p id="test1">This is a <b>bold</b> paragraph.</p>
+<p id="test2">This is another <b>bold</b> paragraph.</p>
+
+<h1 id="test3">This is a heading "foo bar"</h1>
+
+<button id="btn1">Show Old/New Text</button>
+<button id="btn2">Show Old/New HTML</button>
+<button id="btn3">Show New Text</button>
+
+
+<!-- Set attribute of DOM element -->
+<div class="demo2">
+  <a href="https://www.w3schools.com/jquery/jquery_dom_set.asp" target="_blank" id="link1"><p>Change link attribute href by click</p></a>
+
+  <button id="btn4">Change to wikipedia</button>
+<br>
+
+<h2 style="background-color: yellow;" id="text1">( .attr() with callback function)</h2>
+<button id="btn5">Add red to make it orange</button>
+
+</div>
+
+  <script>
+    $(document).ready(function(){
+      $("#btn4").click(function(){
+        $("#link1").attr("href", "https://en.wikipedia.org/wiki/File:Tortoise_and_hare_algorithm.svg");
+      });
+
+    // with callback function
+      $("#btn5").click(function(){
+        $("#text1").attr("background-color", function(i, origValue){
+          return "red";
+        });
+      });
+    
+    });
+  </script>
+
+
+
+</body>
+</html>

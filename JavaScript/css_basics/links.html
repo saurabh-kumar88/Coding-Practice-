@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Links</title>
+</head>
+<body>
+  
+<div class="demo">
+  <ul>
+    <li><a href="#" target="_blank" tabindex="1">Demo link click here</a></li>
+    <br>
+    <li><a href="#" target="_blank" tabindex="1">Demo2 link click here</a></li>
+    <br>
+    <li><a href="#" target="_blank" tabindex="1">Demo3 link click here</a></li>
+  </ul>
+
+  <h1>When order of text lines have no importance : use ul 'unordered list'</h1>
+  <ul>
+    <li>Egg</li>
+    <li>chicken</li>
+    <li>breakfast</li>
+  </ul>
+
+  <table>
+      <ol>
+          <li>school</li>
+          <li>graduation</li>
+          <li>Career</li>
+        </ol>
+  </table>
+  
+
+    
+</div>
+  
+
+  <style>
+
+    .demo{
+      margin: 100px;
+    }
+
+    /* default state - or unvisited*/
+    /* a:visited{
+      color:green;
+    }
+
+    a:hover{
+      color:blue;
+    }
+
+    a:active{
+      color:yellow;
+    } */
+
+
+    a{   
+      color: green;   
+    }
+    
+    /* a:active {
+        color: red;
+        } */
+
+    
+
+a[tabindex]:focus {
+      color:red;
+      outline: none;
+      }
+
+      ul{
+        list-style-type: square;
+      }
+
+    
+  </style>
+
+
+</body>
+</html>

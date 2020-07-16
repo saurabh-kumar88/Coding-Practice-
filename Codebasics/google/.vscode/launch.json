@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Find_All_Triplets",
+      "request": "launch",
+      "mainClass": "google.Find_All_Triplets"
+    }
+  ]
+}
