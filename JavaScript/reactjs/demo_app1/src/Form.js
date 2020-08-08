@@ -4,20 +4,11 @@ class Form extends Component {
   initialState = {
     Title: '',
     Imdb: '',
-
     
   }
 
   state = this.initialState
 
-  // constructor(props){
-  //   super(props);
-  //   this.state = {Title:'', Imdb:''};
-    
-  // }
-
-  
-  
   handleChange = (event) => {
     const {Title, value} = event.target
     // const {Imdb} = event.target.Imdb 
@@ -35,7 +26,7 @@ class Form extends Component {
   }
 
   render(){
-    const {Title, Imdb} = this.state;
+    const {Title, Imdb} = this.state;  
     return(
       <div class="w3-card-4">
         <div class="w3-container w3-green">
@@ -47,7 +38,7 @@ class Form extends Component {
           type="text"
           name="Title"
           id="Title"
-          value={Title}
+          value={Title} // problem part --> when i assign value here then (as per shown in demo app) then <input tag does not take any value (obviously)
           onChange={this.handleChange} />
           <label htmlFor="Title">Title</label>
         </p>
