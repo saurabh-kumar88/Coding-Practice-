@@ -18,11 +18,10 @@ class Form extends Component {
 
 
     submitForm = () => {
-    
-    this.props.handleSubmit(this.state)
-    this.setState(this.initialState)
-    
-  }
+        this.props.handleSubmit(this.state);
+        this.setState(this.state =  {Title: '', Imdb: ''});
+    };
+
 
   render(){
     const {Title, Imdb} = this.state;  
@@ -37,11 +36,11 @@ class Form extends Component {
           type="text"
           name="Title"
           id="Title"
-          value={Title} // problem part --> when i assign value here then (as per shown in demo app) then <input tag does not take any value (obviously)
+          value={Title}
           onChange={this.handleChangeTitle} />
           <label htmlFor="Title">Title</label>
         </p>
-        
+
         <p>
           <input class="w3-input"  
           type="text"
