@@ -27,30 +27,12 @@ class App extends Component {
 
   render(){
     
-
-    // const movies = [
-    //   {
-    //     Title: 'Never say again (1969)',
-    //     Imdb: '8.6',
-    //   },
-    //   {
-    //     Title: 'Tomorrow never die (1986)',
-    //     Imdb: '8.3',
-    //   },
-    //   {
-    //     Title: 'The GodFather (1971)',
-    //     Imdb: '10',
-    //   },
-      
-    // ]
-
     const { movies } = this.state
     
     return(
       <div className="container">
-        <h1>Hello, React!</h1>
-          <Table />
-          <List />
+        <h1>React Billboard Project!</h1>
+          
           <Table2 moviesData={movies} removeTitle={this.removeTitle}/>
           <Form handleSubmit={this.handleSubmit} />
 

@@ -1,25 +1,21 @@
 import React, {Component} from 'react'
 
 class Form extends Component {
-  initialState = {
-    Title: '',
-    Imdb: '',
-    
+  
+  constructor(props){
+    super(props);
+    this.state = {Title: '', Imdb:''};
   }
 
-  state = this.initialState
+  handleChangeTitle = (event) => {
+    this.setState({Title: event.target.value});
+  };
 
-  handleChange = (event) => {
-    const {Title, value} = event.target
-    // const {Imdb} = event.target.Imdb 
-    this.setState({
-      [Title]: value,
-    })
-    
-  }
-
+  handleChangeImdb = (event) => {
+    this.setState({Imdb: event.target.value});
+  };
+  
   submitForm = () => {
-    
     this.props.handleSubmit(this.state)
     this.setState(this.initialState)
     
@@ -39,7 +35,7 @@ class Form extends Component {
           name="Title"
           id="Title"
           value={Title} // problem part --> when i assign value here then (as per shown in demo app) then <input tag does not take any value (obviously)
-          onChange={this.handleChange} />
+          onChange={this.handleChangeTitle} />
           <label htmlFor="Title">Title</label>
         </p>
         
@@ -49,14 +45,14 @@ class Form extends Component {
           name="Imdb"
           id="Imdb"
           value={Imdb}
-          onChange={this.handleChange} />
+          onChange={this.handleChangeImdb} />
           <label htmlFor="Imdb">Imdb Ratings</label>
         </p>
       </form>
-      <input class="button blue font16x"
+      <button class="button blue font16x"
         type="button"
         value="Submit"
-        onClick={this.submitForm}/>
+        onClick={this.submitForm}>submit</button>
 
       </div>
       
