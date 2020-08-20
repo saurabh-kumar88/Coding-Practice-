@@ -17,16 +17,18 @@ import './App.css';
 // import InlineStyles from './components/InlineStyles';
 // import './components/appStyles.css'
 // import styles from  './components/appStyles.module.css'
-import Form from './components/Form'
-
+// import Form from './components/Form'
+import LifeCycleA from './components/life-cycle-methods/LifeCycleA';
 
 class App extends Component{
   render(){
     return (
       <div className="App">
+      <LifeCycleA />
+      
       
       {/**form and inputs handling */}
-      <Form />
+      {/**<Form />*/}
 
       {/**<InlineStyles />*/}
       {/**<h1 className="error">Error</h1>*/}
