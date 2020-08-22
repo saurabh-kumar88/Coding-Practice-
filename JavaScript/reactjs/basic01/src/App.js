@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom'
 import './App.css';
+
+
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -18,14 +20,35 @@ import './App.css';
 // import './components/appStyles.css'
 // import styles from  './components/appStyles.module.css'
 // import Form from './components/Form'
-import LifeCycleA from './components/life-cycle-methods/LifeCycleA';
+// import LifeCycleA from './components/life-cycle-methods/LifeCycleA';
+// import FragmentDemo from './components/fragments/FragmentDemo';
+// import Table from './components/fragments/Table';
+// import PureComp from './components/PureComponent';
+// import ParentComp from './components/ParentComp';
+// import RefsDemo from './components/RefsDemo';
+// import FocusInput from './components/FocusInput'
+import FarwardRefParentInput from './components/FarwardRefParentInput';
+
 
 class App extends Component{
   render(){
     return (
       <div className="App">
-      <LifeCycleA />
       
+      <FarwardRefParentInput />
+      
+      {/**<FocusInput />*/}
+
+      {/** <RefsDemo />*/}
+
+      {/** <ParentComp />*/}
+
+
+      {/**<Table />*/}      
+      
+      {/**<FragmentDemo />*/}
+      
+      {/**<LifeCycleA />*/}
       
       {/**form and inputs handling */}
       {/**<Form />*/}
