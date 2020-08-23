@@ -27,15 +27,34 @@ import './App.css';
 // import ParentComp from './components/ParentComp';
 // import RefsDemo from './components/RefsDemo';
 // import FocusInput from './components/FocusInput'
-import FarwardRefParentInput from './components/FarwardRefParentInput';
-
+// import FarwardRefParentInput from './components/FarwardRefParentInput';
+// import PortalDemo from './components/portals/PortalDemo';
+// import Hero from './components/errorBoundary/Hero';
+// import ErrorBoundary from './components/errorBoundary/ErrorBoundary';
+import ClickCounter from './components/higher-order-components/ClickCounter';
+import HoverCounter from './components/higher-order-components/HoverCounter';
 
 class App extends Component{
   render(){
     return (
       <div className="App">
+      <ClickCounter name='saurabh'/>
+      <HoverCounter />
+      {/**<ErrorBoundary >
+        <Hero heroName='Wondar Woman' />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName='Superman'/>
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName = 'Joker '/>
+      </ErrorBoundary> */}
       
-      <FarwardRefParentInput />
+
+      {/**<PortalDemo />*/}
+      {/**<FarwardRefParentInput />*/}
       
       {/**<FocusInput />*/}
 
