@@ -31,15 +31,49 @@ import './App.css';
 // import PortalDemo from './components/portals/PortalDemo';
 // import Hero from './components/errorBoundary/Hero';
 // import ErrorBoundary from './components/errorBoundary/ErrorBoundary';
-import ClickCounter from './components/higher-order-components/ClickCounter';
-import HoverCounter from './components/higher-order-components/HoverCounter';
+// import ClickCounter from './components/higher-order-components/ClickCounter';
+// import HoverCounter from './components/higher-order-components/HoverCounter';
+// import ClickCounterTwo from './components/higher-order-components/ClickCounterTwo';
+// import HoverCounterTwo from './components/higher-order-components/HoverCounterTwo';
+// import User from './components/higher-order-components/User';
+// import Counter from './components/higher-order-components/Counter';
+import ComponentC from './components/context/ComponentC';
+
+
 
 class App extends Component{
   render(){
     return (
       <div className="App">
+
+      {/**context */}
+
+      <ComponentC />
+      
+      {/** code reusing by HOC
       <ClickCounter name='saurabh'/>
-      <HoverCounter />
+      <HoverCounter /> 
+      */}
+
+      {/** code reusing by props rendering
+
+        <Counter> 
+        {(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount ={incrementCount} />
+        )}
+      </Counter>
+
+      <Counter>
+        {(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount ={incrementCount} />
+        )}
+      </Counter> 
+      
+      */}
+      
+      
+
+
       {/**<ErrorBoundary >
         <Hero heroName='Wondar Woman' />
       </ErrorBoundary>
