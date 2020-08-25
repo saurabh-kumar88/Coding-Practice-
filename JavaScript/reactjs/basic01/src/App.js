@@ -38,17 +38,25 @@ import './App.css';
 // import User from './components/higher-order-components/User';
 // import Counter from './components/higher-order-components/Counter';
 import ComponentC from './components/context/ComponentC';
-
+import {UserProvider}  from './components/context/UserContext';
 
 
 class App extends Component{
   render(){
     return (
-      <div className="App">
+      <div className="App">  
 
       {/**context */}
 
-      <ComponentC />
+      {/**Step 2 use context provider to provie data as props top */}
+      {/**check ComponentF for Step3 */}
+      
+      
+      <UserProvider value="saurabh">  
+        <ComponentC />
+      </UserProvider>
+       
+      
       
       {/** code reusing by HOC
       <ClickCounter name='saurabh'/>
