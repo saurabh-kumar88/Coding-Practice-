@@ -38,7 +38,7 @@ import './App.css';
 // import User from './components/higher-order-components/User';
 // import Counter from './components/higher-order-components/Counter';
 import ComponentC from './components/context/ComponentC';
-import {UserProvider}  from './components/context/UserContext';
+import {UserProvider} from './components/context/UserContext';
 
 
 class App extends Component{
