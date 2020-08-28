@@ -3,6 +3,7 @@ import './App.css';
 
 
 
+
 /**useState Hook */
 // import ClassCounter from './components/use-state-hook/ClassCounter';
 // import HookCounter from './components/use-state-hook/HookCounter';
@@ -14,9 +15,14 @@ import './App.css';
 /**useEffect Hook */
 // import ClassCounterHook from './components/use-effect-hook/ClassCounterHook';
 // import HookCounterOne from './components/use-effect-hook/HookCounterOne';
-import ClassMouse from './components/use-effect-hook/ClassMouse';
-import HookMouse from './components/use-effect-hook/HookMouse';
-import MouseContainer from './components/use-effect-hook/MouseContainer';
+// import ClassMouse from './components/use-effect-hook/ClassMouse';
+// import HookMouse from './components/use-effect-hook/HookMouse';
+// import MouseContainer from './components/use-effect-hook/MouseContainer';
+// import ClassIntervalCounter from './components/use-effect-hook/ClassIntervalCounter';
+// import HookIntervalCounter from './components/use-effect-hook/HookIntervalCounter';
+import DataFatching from './components/use-effect-hook/DataFatching';
+
+
 /** */
 
 function App() {
@@ -37,9 +43,13 @@ function App() {
             {/**<HookCounterOne />*/}
             {/**<ClassMouse />*/}
             {/**<HookMouse />*/}
-            <MouseContainer/>
-            
-            {/** */}
+            {/**<MouseContainer/>*/}
+            {/**<ClassIntervalCounter />
+            <HookIntervalCounter />*/}
+
+            <DataFatching />
+
+            {/**------------------- */}
 
 
 
