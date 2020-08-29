@@ -20,12 +20,20 @@ import './App.css';
 // import MouseContainer from './components/use-effect-hook/MouseContainer';
 // import ClassIntervalCounter from './components/use-effect-hook/ClassIntervalCounter';
 // import HookIntervalCounter from './components/use-effect-hook/HookIntervalCounter';
-import DataFatching from './components/use-effect-hook/DataFatching';
-
+// import DataFatching from './components/use-effect-hook/DataFatching';
 
 /** */
 
+/** context */
+import ComponentA from './components/context/ComponentA';
+/** */
+
+
+export const userContext = React.createContext()
+export const channelContext = React.createContext()
+
 function App() {
+    
     return (
         <div className="App">
             
@@ -44,12 +52,20 @@ function App() {
             {/**<ClassMouse />*/}
             {/**<HookMouse />*/}
             {/**<MouseContainer/>*/}
-            {/**<ClassIntervalCounter />
-            <HookIntervalCounter />*/}
-
-            <DataFatching />
+            {/**<ClassIntervalCounter /> */}
+            {/**<HookIntervalCounter /> */} 
+            {/**<DataFatching /> */}
 
             {/**------------------- */}
+
+            {/** context */}
+            <userContext.Provider value={'foo'}>
+                <channelContext.Provider value={'bar'} >
+                    <ComponentA />
+                </channelContext.Provider>
+            </userContext.Provider>
+            
+            {/** */} 
 
 
 
