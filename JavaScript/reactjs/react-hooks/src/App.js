@@ -25,12 +25,17 @@ import './App.css';
 /** */
 
 /** context */
-import ComponentA from './components/context/ComponentA';
+// import ComponentA from './components/context/ComponentA';
+// export const userContext = React.createContext()
+// export const channelContext = React.createContext()
 /** */
 
+/** useReducer */
+import Counter from './components/use-reducer/Counter';
+import CounterTwo from './components/use-reducer/CounterTwo';
+import CounterThree from './components/use-reducer/CounterThree';
+/************* */
 
-export const userContext = React.createContext()
-export const channelContext = React.createContext()
 
 function App() {
     
@@ -59,13 +64,21 @@ function App() {
             {/**------------------- */}
 
             {/** context */}
-            <userContext.Provider value={'foo'}>
+            {/**<userContext.Provider value={'foo'}>
                 <channelContext.Provider value={'bar'} >
                     <ComponentA />
                 </channelContext.Provider>
-            </userContext.Provider>
+            </userContext.Provider> */}
             
-            {/** */} 
+            {/**------*/}
+            
+            {/** useReduce */}
+            {/**<Counter /> */}
+            {/**<CounterTwo /> */}
+            <CounterThree /> 
+            {/***/}
+            
+            {/**---------- */}
 
 
 
