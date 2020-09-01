@@ -1,7 +1,6 @@
 import React  from 'react';
 import './App.css';
-import DataFetchingOne from './components/use-reducer/DataFetchingOne';
-import DataFetchingTwo from './components/use-reducer/DataFetchingTwo';
+
 
 
 
@@ -36,10 +35,18 @@ import DataFetchingTwo from './components/use-reducer/DataFetchingTwo';
 // import Counter from './components/use-reducer/Counter';
 // import CounterTwo from './components/use-reducer/CounterTwo';
 // import CounterThree from './components/use-reducer/CounterThree';
-
+// import DataFetchingOne from './components/use-reducer/DataFetchingOne';
+// import DataFetchingTwo from './components/use-reducer/DataFetchingTwo';
 
 /************* */
 
+/*** useCallback */
+// import ParentComponent from './components/use-callback/ParentComponent'
+/** */
+
+
+/** useMemo */
+import Counter from './components/use-memo/Counter'
 
 function App() {
     
@@ -87,7 +94,11 @@ function App() {
             {/**---------- */}
 
             {/**---- useCallback ----*/}
+            {/**<ParentComponent />*/}
             {/** ------------- */}
+
+            {/** -- useMemo -- */}
+            <Counter />
 
 
         </div>
