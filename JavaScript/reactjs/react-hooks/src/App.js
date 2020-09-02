@@ -5,6 +5,7 @@ import './App.css';
 
 
 
+
 /**useState Hook */
 // import ClassCounter from './components/use-state-hook/ClassCounter';
 // import HookCounter from './components/use-state-hook/HookCounter';
@@ -46,7 +47,20 @@ import './App.css';
 
 
 /** useMemo */
-import Counter from './components/use-memo/Counter'
+// import Counter from './components/use-memo/Counter'
+
+
+/** useRef */
+// import FocusInput from './components/use-ref/FocusInput'
+// import ClassTimer from './components/use-ref/ClassTimer'
+// import HookTimer from './components/use-ref/HookTimer'
+
+/** custom Hooks */
+import DocTitleOne from './components/custom-hooks/DocTitleOne'
+import DocTitleTwo from './components/custom-hooks/DocTitleTwo';
+import CounterOne from './components/custom-hooks/CounterOne'
+import CounterTwo from './components/custom-hooks/CounterTwo'
+import UserForm from './components/custom-hooks/UserForm'
 
 function App() {
     
@@ -70,7 +84,7 @@ function App() {
             {/**<MouseContainer/>*/}
             {/**<ClassIntervalCounter /> */}
             {/**<HookIntervalCounter /> */} 
-            {/**<DataFatching /> */}
+            {/**<DataFetching /> */}
 
             {/**------------------- */}
 
@@ -98,8 +112,21 @@ function App() {
             {/** ------------- */}
 
             {/** -- useMemo -- */}
-            <Counter />
+            {/**<Counter />*/}
 
+            {/**---- useRef ----- */}
+            {/**<FocusInput />*/}
+            {/**<ClassTimer />*/}
+            {/**<HookTimer />*/}
+
+            {/** custom hooks */}
+            {/**<DocTitleOne />
+            <DocTitleTwo /> */}
+            
+            {/**<CounterOne />
+            <CounterTwo /> */}
+
+            <UserForm />
 
         </div>
     );
