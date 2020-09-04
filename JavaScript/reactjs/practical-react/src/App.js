@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
 import ToastNotifications from './components/ToastNotifications';
-
-// import IconsDemo from './components/IconsDemo'
+import IconsDemo from './components/IconsDemo'
+import Modal01 from './components/Modal01'
 
 function App() {
   return (
     <div className="App">
       {/**<IconsDemo /> */}
-      <ToastNotifications />  
+      {/**<ToastNotifications />*/}
+      <Modal01 />  
     </div>
   );
 }

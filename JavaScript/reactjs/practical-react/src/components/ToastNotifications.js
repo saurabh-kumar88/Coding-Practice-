@@ -6,12 +6,22 @@ import 'react-toastify/dist/ReactToastify.css'
 toast.configure()
 function ToastNotifications() {
   const notify = () => {
-    toast(' Basic React-ToastNotification ', { position : toast.POSITION.TOP_LEFT })
-    toast(' Basic React-ToastNotification ', { position : toast.POSITION.TOP_RIGHT })
-    toast(' Basic React-ToastNotification ', { position : toast.POSITION.TOP_CENTER })
-    toast(' Basic React-ToastNotification ', { position : toast.POSITION.TOP_BOTTOM_LEFT })
-    toast(' Basic React-ToastNotification ', { position : toast.POSITION.TOP_BOTTOM_RIGHT })
-    toast(' Basic React-ToastNotification ', { position : toast.POSITION.TOP_CENTER })
+    toast(' basic-toast ', { position : toast.POSITION.TOP_LEFT })
+    toast.success(' success-toast ', 
+    { position : toast.POSITION.TOP_RIGHT,
+      autoClose : 1000 })
+    toast.error(' error-toast ',
+    { position : toast.POSITION.TOP_CENTER,
+    autoClose : false })
+
+    toast.error(<CustomToast />,
+    { position : toast.POSITION.TOP_CENTER,
+    autoClose : false })
+
+    // toast.info(' info-toast ', { position : toast.POSITION.BOTTOM_LEFT })
+    // toast.warn(' warning-toast ', { position : toast.POSITION.BOTTOM_RIGHT })
+    
+    
   }
   return (
     <div>
@@ -19,5 +29,18 @@ function ToastNotifications() {
     </div>
   )
 }
+
+// user defined toast
+
+const CustomToast = ({ closeToast }) => {
+  return(
+    <div>
+      Custom toast 
+      <button onClick={closeToast}>close</button>
+    </div>
+  )
+}
+
+
 
 export default ToastNotifications
